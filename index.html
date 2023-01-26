@@ -1,66 +1,142 @@
-<html lang="zh-hans"><head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>网站正在建设中</title>
-		<meta property="og:description" content="网站即将上线，感谢您的耐心等待！">
-		<link rel="stylesheet" id="mtnc-style-css" href="./style.css" media="all">
-	</head>
-	<body class="maintenance ">
-	<div class="main-container">
-		
-		<div id="wrapper" style="visibility: visible;">
-			<div id="content" class="site-content" style="position: absolute; top: 283.2px;">
-				<div class="center">
-					<h2 class="heading font-center" style="font-weight:300;font-style:normal">网站正在建设中</h2>
-					<div class="description" style="font-weight:300;font-style:normal">
-						<p>网站即将上线，感谢您的耐心等待！</p>
-					</div>			
-				</div>
-			</div>
-		</div>
-		<footer>
-			<div id="custom_footer" style="text-align:center">
-				<div class="custom_footer">
-					<a class="footer_hover" target="_blank" href="http://www.qianlima.fun/">copyright @ 2022 千里马</a>
-					<span class="Separator">|</span>
-					<br class="line_feed">
-					<a class="footer_hover" target="_blank" href="https://beian.miit.gov.cn/">鄂IPC备2022017649号</a>
-				</div>
-			
-				<style>
-					a{background-color: transparent;color: inherit;text-decoration: inherit;}
-					.footer_hover{border-radius: 0.5rem;padding-inline-start: 0.375rem;padding-inline-end: 0.375rem;padding-top: 0.25rem;padding-bottom: 0.25rem;}
-					.footer_hover:hover{border-radius: 20px;background: #d1d5da;width: 10%;height: 10%;}
-					.custom_footer {height:35px;position:relative;width: 100%;text-align: center;}
-					.line_feed{display:none;}
-					@media (max-width:410px){.Separator{display: none;}.line_feed{display:inline;}}
-				</style>
-				<script>
-					//用于创建XMLHttpRequest对象
-					function createXmlHttp() {
-						//根据window.XMLHttpRequest对象是否存在使用不同的创建方式
-						if (window.XMLHttpRequest) {
-							xmlHttp = new XMLHttpRequest();
-						} else {
-							xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");//IE浏览器支持的创建方式
+<!DOCTYPE html>
+<html lang="zh">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+        <title>千里马qianlima</title>
+        <meta name="description"
+              content="千里马的个人网站主页">
+        <meta name="keywords" content="千里马的个人网站主页">
+        <link rel="stylesheet" type="text/css" href="./css/FiraCode.css">
+        <link rel="stylesheet" type="text/css" href="./css/raspberrypi.css">
+        <link rel="icon" href="./img/logo.png">
+    </head>
+
+    <body>
+        <div id="box">
+            <!-- 个人资料卡片 -->
+            <div class="meBox">
+                <!-- 头像 -->
+                <div class="headPhoto"></div>
+                <!-- 介绍 -->
+                <div class="meBox-title">
+                    <p>千里马</p>
+                    <div class="fg"></div>
+                </div>
+                <div class="meBox-text">
+                    <p>爱好计算机</p>
+                </div>
+                <!-- 两个按钮 -->
+                <!-- <div class="meBox-Button">
+                    <a href="#">关于</a>
+                    <a href="#">联系</a>
+                </div> -->
+            </div>
+
+            <!-- 伪终端介绍 -->
+            <div id="cmdBox">
+                <!-- 第一个终端 -->
+                <div class="cmd">
+                    <!-- 三个按钮 -->
+                    <div class="click">
+                        <div class="red"></div>
+                        <div class="yellow"></div>
+                        <div class="green"></div>
+                    </div>
+                    <!-- 顶部标题 -->
+                    <div class="title">
+                        <span>root@raspberrypi:~</span>
+                    </div>
+                    <!-- 终端内文字 -->
+                    <div class="cmdText">
+                        <span style="color: rgb(0, 190, 0);">root@raspberrypi</span>
+                        <span style="color: blue;">~</span>
+                        <span style="color: rgb(39, 39, 39);">./天气.sh</span>
+                        <br/>
+                        <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=ts&skin=cherry" frameborder="0" width="325" height="220" allowtransparency="true"></iframe>
+						<br/>
+                        <span style="color: rgb(0, 190, 0);">root@raspberrypi</span>
+                        <span style="color: blue;">~</span>
+                        <span style="color: rgb(39, 39, 39);">./me	.txt</span>
+                        <p>爱好计算机，会去自学自己感兴趣的一切东西</p>
+                        <span style="color: rgb(0, 190, 0);">root@raspberrypi</span>
+                        <span style="color: blue;">~</span>
+                    </div>
+                </div>
+                <!-- 第二个终端 -->
+                <div class="cmd cmd2">
+                    <!-- 三个按钮 -->
+                    <div class="click">
+                        <div class="red"></div>
+                        <div class="yellow"></div>
+                        <div class="green"></div>
+                    </div>
+                    <!-- 顶部标题 -->
+                    <div class="title">
+                        <span>root@raspberrypi:~</span>
+                    </div>
+                    <!-- 终端内文字 -->
+                    <div class="cmdText">
+                        <span style="color: rgb(0, 190, 0);">root@raspberrypi</span>
+                        <span style="color: blue;">~</span>
+                        <span style="color: rgb(39, 39, 39);">./链接.sh</span>
+                        <p>我的其他站点：</p>
+                        <ul class="ul">
+                            <li>
+                                <a href="http://pan.qianlima.fun">网盘</a>
+                            </li>
+                        </ul>
+                        <span style="color: rgb(0, 190, 0);">root@raspberrypi</span>
+                        <span style="color: blue;">~</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 页脚 -->
+            <footer id="footer">
+				<div><a class="footer_hover" target="_blank" href="https://gitee.com/n0ts/NutssssIndex/tree/master/NutssssIndex">技术支持 nutssss</a></div>
+				<div id="custom_footer" style="text-align:center">
+					<div class="custom_footer">
+						<a class="footer_hover" target="_blank" href="http://www.qianlima.fun/">copyright @ 2022 千里马</a>
+						<span class="Separator">|</span>
+						<br class="line_feed">
+						<a class="footer_hover" target="_blank" href="https://beian.miit.gov.cn/">鄂ICP备2022017649号</a>
+					</div>
+				
+					<style>
+						a{background-color: transparent;color: inherit;text-decoration: inherit;}
+						.footer_hover{border-radius: 0.5rem;padding-inline-start: 0.375rem;padding-inline-end: 0.375rem;padding-top: 0.25rem;padding-bottom: 0.25rem;}
+						.footer_hover:hover{border-radius: 20px;background: #d1d5da;width: 10%;height: 10%;}
+						.custom_footer {height:35px;position:relative;width: 100%;text-align: center;}
+						.line_feed{display:none;}
+						@media (max-width:410px){.Separator{display: none;}.line_feed{display:inline;}}
+					</style>
+					<script>
+						//用于创建XMLHttpRequest对象
+						function createXmlHttp() {
+							//根据window.XMLHttpRequest对象是否存在使用不同的创建方式
+							if (window.XMLHttpRequest) {
+								xmlHttp = new XMLHttpRequest();
+							} else {
+								xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");//IE浏览器支持的创建方式
+							}
 						}
-					}
-					var url = "./custom_footer.html";
-					createXmlHttp();
-					xmlHttp.onreadystatechange = writeSource
-					xmlHttp.open("GET", url, true);
-					xmlHttp.send(null);
-					
-					function writeSource() {
-						if (xmlHttp.responseText != "") {
-							document.getElementById("custom_footer").innerHTML = xmlHttp.responseText;
+						var url = "http://www.qianlima.fun/custom_footer.html";
+						createXmlHttp();
+						xmlHttp.onreadystatechange = writeSource
+						xmlHttp.open("GET", url, true);
+						xmlHttp.send(null);
+						
+						function writeSource() {
+							if (xmlHttp.responseText != "") {
+								document.getElementById("custom_footer").innerHTML = xmlHttp.responseText;
+							}
 						}
-					}
-				</script>
-			</div>
-		</footer>
-			<picture class="bg-img">
-			<img src="./mt-sample-background.jpg">
-		</picture>
-	</div>
-	
-</body></html>
+					</script>
+				</div>
+            </footer>
+        </div>
+    </body>
+</html>
