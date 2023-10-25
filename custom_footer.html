@@ -1,6 +1,6 @@
 <!-- 自定义页脚 -->
 <div class="custom_footer">
-  <a class="footer_hover" target="_blank" href="http://www.qianlima.fun/">copyright @ 2022-2023 千里马</a>
+  <a class="footer_hover" target="_blank" href="http://www.qianlima.fun/">copyright @ 2022<span id="year"></span> 千里马</a>
   <span class="Separator1">|</span><br class="line_feed1">
   <a class="footer_hover" target="_blank" href="https://beian.miit.gov.cn/">鄂ICP备2022017649号</a>
   <!--<span class="Separator0">|</span><br class="line_feed0">
@@ -10,6 +10,9 @@
   <!-- <span class="Separator1">|</span><br class="line_feed1">
   <a class="footer_hover" target="_blank" >赞 助</a> -->
 </div>
+<script>
+    document.getElementById("year").innerHTML = '-' + new Date().getFullYear();
+</script>
 <style>
   /*灰白*/
   /*
