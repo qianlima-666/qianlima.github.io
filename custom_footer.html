@@ -9,7 +9,9 @@
   <a class="footer_hover" target="_blank" >赞 助</a> -->
 </div>
 <script>
-    document.getElementById("year").innerHTML = '-' + new Date().getFullYear();
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById("year").innerHTML = '-' + new Date().getFullYear();
+    });
 </script>
 <style>
   /*灰白*/
