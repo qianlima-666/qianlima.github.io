@@ -1,146 +1,193 @@
 <!DOCTYPE html>
 <html lang="zh">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-        <title>千里马qianlima</title>
-        <meta name="description"
-              content="千里马的个人网站主页">
-        <meta name="keywords" content="千里马的个人网站主页">
-        <link rel="stylesheet" type="text/css" href="./css/FiraCode.css">
-        <link rel="stylesheet" type="text/css" href="./css/raspberrypi.css">
-        <link rel="icon" href="./img/logo.png">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>千里马[qianlima] - 个人主页</title>
+    <!-- <meta name="description" content="千里马的个人网站主页，计算机应用技术专业专科生，专注Web前端开发"> -->
+    <!-- <meta name="keywords" content="千里马,个人网站,Web前端,Vue3,Python,PHP,计算机应用技术,树莓派,个人主页"> -->
+    <link rel="stylesheet" href="./css/FiraCode.css">
+    <link rel="stylesheet" href="./css/raspberrypi.css">
+    <link rel="icon" href="./img/logo.png">
+</head>
 
-    <body>
-        <div id="box">
-            <!-- 个人资料卡片 -->
-            <div class="meBox">
-                <!-- 头像 -->
-                <div class="headPhoto"></div>
-                <!-- 介绍 -->
-                <div class="meBox-title">
-                    <p>千里马</p>
-                    <div class="fg"></div>
-                </div>
-                <div class="meBox-text">
-                    <p>爱好计算机</p>
-                </div>
-                <!-- 两个按钮 -->
-                <!-- <div class="meBox-Button">
+<body>
+    <div id="box">
+        <!-- 个人资料卡片 -->
+        <div class="meBox">
+            <!-- 头像 -->
+            <div class="headPhoto"></div>
+            <!-- 介绍 -->
+            <div class="meBox-title">
+                <p>千里马</p>
+                <div class="fg"></div>
+            </div>
+            <div class="meBox-text">
+                <p>计算机应用技术专业专科生，专注Web前端，具备全栈技术栈（web/Vue3/Python/PHP）。</p>
+            </div>
+            <!-- 两个按钮 -->
+            <!-- <div class="meBox-Button">
                     <a href="#">关于</a>
                     <a href="#">联系</a>
                 </div> -->
-            </div>
-
-            <!-- 伪终端介绍 -->
-            <div id="cmdBox">
-                <!-- 第一个终端 -->
-                <div class="cmd">
-                    <!-- 三个按钮 -->
-                    <div class="click">
-                        <div class="red"></div>
-                        <div class="yellow"></div>
-                        <div class="green"></div>
-                    </div>
-                    <!-- 顶部标题 -->
-                    <div class="title">
-                        <span>root@raspberrypi:~</span>
-                    </div>
-                    <!-- 终端内文字 -->
-                    <div class="cmdText">
-                        <span style="color: rgb(0, 190, 0);">root@raspberrypi</span>
-                        <span style="color: blue;">~</span>
-                        <span style="color: rgb(39, 39, 39);">./天气.sh</span>
-                        <br/>
-                        <iframe scrolling="no" src="https://widget.tianqiapi.com/?style=ts&skin=cherry" frameborder="0" width="325" height="220" allowtransparency="true"></iframe>
-						<br/>
-                        <span style="color: rgb(0, 190, 0);">root@raspberrypi</span>
-                        <span style="color: blue;">~</span>
-                        <span style="color: rgb(39, 39, 39);">./me	.txt</span>
-                        <p>爱好计算机，会去自学自己感兴趣的一切东西</p>
-                        <span style="color: rgb(0, 190, 0);">root@raspberrypi</span>
-                        <span style="color: blue;">~</span>
-                    </div>
-                </div>
-                <!-- 第二个终端 -->
-                <div class="cmd cmd2">
-                    <!-- 三个按钮 -->
-                    <div class="click">
-                        <div class="red"></div>
-                        <div class="yellow"></div>
-                        <div class="green"></div>
-                    </div>
-                    <!-- 顶部标题 -->
-                    <div class="title">
-                        <span>root@raspberrypi:~</span>
-                    </div>
-                    <!-- 终端内文字 -->
-                    <div class="cmdText">
-                        <span style="color: rgb(0, 190, 0);">root@raspberrypi</span>
-                        <span style="color: blue;">~</span>
-                        <span style="color: rgb(39, 39, 39);">./链接.sh</span>
-                        <p>我的其他站点：</p>
-                        <ul class="ul">
-                            <li>
-                                <a href="http://pan.qianlima.fun">网盘</a>
-                            </li>
-                        </ul>
-                        <span style="color: rgb(0, 190, 0);">root@raspberrypi</span>
-                        <span style="color: blue;">~</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 页脚 -->
-            <footer id="footer">
-				<div style="height:25px">
-					<a class="footer_hover" target="_blank" href="https://gitee.com/n0ts/NutssssIndex/tree/master/NutssssIndex">技术支持 nutssss</a>
-					<span class="Separator">|</span>
-					<a class="footer_hover" target="_blank" href="https://pages.github.com/">服务支持 GitHub Pages</a>
-		    	</div>	
-				<div id="custom_footer" style="text-align:center">
-					<div class="custom_footer">
-						<a class="footer_hover" target="_blank" href="http://www.qianlima.fun/">copyright @ 2022 千里马</a>
-						<span class="Separator">|</span>
-						<br class="line_feed">
-						<a class="footer_hover" target="_blank" href="https://beian.miit.gov.cn/">鄂ICP备2022017649号</a>
-					</div>
-				
-					<style>
-						a{background-color: transparent;color: inherit;text-decoration: inherit;}
-						.footer_hover{border-radius: 0.5rem;padding-inline-start: 0.375rem;padding-inline-end: 0.375rem;padding-top: 0.25rem;padding-bottom: 0.25rem;}
-						.footer_hover:hover{border-radius: 20px;background: #d1d5da;width: 10%;height: 10%;}
-						.custom_footer {height:35px;position:relative;width: 100%;text-align: center;}
-						.line_feed{display:none;}
-						@media (max-width:410px){.Separator{display: none;}.line_feed{display:inline;}}
-					</style>
-					<script>
-						//用于创建XMLHttpRequest对象
-						function createXmlHttp() {
-							//根据window.XMLHttpRequest对象是否存在使用不同的创建方式
-							if (window.XMLHttpRequest) {
-								xmlHttp = new XMLHttpRequest();
-							} else {
-								xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");//IE浏览器支持的创建方式
-							}
-						}
-						var url = "./custom_footer.html";
-						createXmlHttp();
-						xmlHttp.onreadystatechange = writeSource
-						xmlHttp.open("GET", url, true);
-						xmlHttp.send(null);
-						
-						function writeSource() {
-							if (xmlHttp.responseText != "") {
-								document.getElementById("custom_footer").innerHTML = xmlHttp.responseText;
-							}
-						}
-					</script>
-				</div>
-            </footer>
         </div>
-    </body>
+
+        <!-- 伪终端介绍 -->
+        <div id="cmdBox">
+            <!-- 第一个终端 -->
+            <div class="cmd">
+                <!-- 三个按钮 -->
+                <div class="click">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <!-- 顶部标题 -->
+                <div class="title">
+                    <span>root@raspberrypi:~</span>
+                </div>
+                <!-- 终端内文字 -->
+                <div class="cmdText">
+                    <!--  -->
+                    <span style="color: rgb(0, 190, 0);">root@raspberrypi</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./me.sh</span>
+                    <p style="margin: 8px 0 12px 0;">
+                        计算机应用技术专业专科生，专注Web前端，具备全栈技术栈(web/Vue3/Python等)。
+                    </p>
+                    <ul>
+                        <li><strong>技术能力：</strong>独立开发5款网易平台游戏资源（收益1.3万元）。</li>
+                        <li><strong>学术表现：</strong>综合成绩专业前10%。</li>
+                        <li>
+                            <strong>运维经验：</strong>2年机房维护经验，熟悉Linux服务器及云服务（阿里云）的基本使用。
+                            <ul>
+                                <li>阿里云：轻量服务器运行frp内网穿透+网站监控</li>
+                                <li>树莓派：部署个人网站及学校项目</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--  -->
+                    <span style="color: rgb(0, 190, 0);">root@raspberrypi</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./skills.sh</span>
+                    <ul>
+                        <li><strong>前端开发：</strong>HTML/CSS/JavaScript、Vue3、微信小程序、HarmonyOS。</li>
+                        <li><strong>后端/数据库：</strong>MySQL、Python（大一自学）、PHP（自学）。</li>
+                        <li><strong>测试/运维：</strong>接口自动化测试、软件测试、性能测试、Linux服务器维护。</li>
+                        <li><strong>自学其他：</strong>云服务器(阿里云、华为云、腾讯云等)、Git、Photoshop。</li>
+                    </ul>
+                    <!--  -->
+                    <span style="color: rgb(0, 190, 0);">root@raspberrypi</span>
+                    <span style="color: blue;">~</span>
+                </div>
+            </div>
+
+            <!-- 第二个终端 -->
+            <div class="cmd cmd2">
+                <!-- 三个按钮 -->
+                <div class="click">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <!-- 顶部标题 -->
+                <div class="title">
+                    <span>root@raspberrypi:~</span>
+                </div>
+                <!-- 终端内文字 -->
+                <div class="cmdText">
+                    <!--  -->
+                    <span style="color: rgb(0, 190, 0);">root@raspberrypi</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./weather.sh</span>
+                    <br />
+                    <iframe scrolling="no" src="https://widget.tianqiapi.com/?style=ts&skin=cherry" frameborder="0"
+                        width="325" height="220" allowtransparency="true"></iframe>
+                    <br />
+                    <!--  -->
+                    <span style="color: rgb(0, 190, 0);">root@raspberrypi</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./link.sh</span>
+                    <p>我的其他站点：</p>
+                    <ul class="link">
+                        <li><a href="http://pan.qianlima.fun">网盘</a></li>
+                    </ul>
+                    <!--  -->
+                    <span style="color: rgb(0, 190, 0);">root@raspberrypi</span>
+                    <span style="color: blue;">~</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <footer id="footer">
+            <div style="height:25px">
+                <a class="footer_hover" target="_blank"
+                    href="https://gitee.com/n0ts/NutssssIndex/tree/master/NutssssIndex">技术支持 NutssssIndex</a>
+                <span class="Separator">|</span>
+                <a class="footer_hover" target="_blank" href="https://pages.github.com/">服务支持 GitHub Pages</a>
+            </div>
+            <div id="custom_footer" class="custom_footer">
+                <a class="footer_hover" target="_blank" href="http://www.qianlima.fun/">copyright @ 2022 千里马</a>
+                <span class="Separator">|</span>
+                <br class="line_feed">
+                <a class="footer_hover" target="_blank" href="https://beian.miit.gov.cn/">鄂ICP备2022017649号</a>
+            </div>
+            <style>
+                a {
+                    background-color: transparent;
+                    color: inherit;
+                    text-decoration: inherit;
+                }
+
+                .footer_hover {
+                    border-radius: 0.5rem;
+                    padding: 0.25rem 0.375rem;
+                }
+
+                .footer_hover:hover {
+                    border-radius: 20px;
+                    background: #d1d5da;
+                }
+
+                .custom_footer {
+                    height: 35px;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .line_feed {
+                    display: none;
+                }
+
+                @media (max-width:410px) {
+                    .Separator {
+                        display: none;
+                    }
+
+                    .line_feed {
+                        display: inline;
+                    }
+                }
+            </style>
+            <script>
+                // 动态加载自定义页脚
+                (function () {
+                    var url = "./custom_footer.html";
+                    var xhr = new XMLHttpRequest();
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState === 4 && xhr.status === 200 && xhr.responseText.trim() !== "") {
+                            document.getElementById("custom_footer").innerHTML = xhr.responseText;
+                        }
+                    };
+                    xhr.open("GET", url, true);
+                    xhr.send();
+                })();
+            </script>
+        </footer>
+    </div>
+</body>
+
 </html>
