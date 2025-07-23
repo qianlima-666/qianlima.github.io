@@ -9,10 +9,13 @@
   <a class="footer_hover" target="_blank" >赞 助</a> -->
 </div>
 <script>
-    window.onload = function() {
-        console.log("123");
-        document.getElementById("year").innerHTML = '-' + new Date().getFullYear();
-    };
+    let interval = setInterval(() => {
+        if (document.getElementById("year")) {
+          console.log(new Date().getFullYear());
+          document.getElementById("year").innerHTML = '-' + new Date().getFullYear();
+          clearInterval(interval);
+        }
+    }, 200);
 </script>
 <style>
   /*灰白*/
